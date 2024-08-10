@@ -7,7 +7,7 @@ on:
         version:
           description: 'New Version'
           required: true
-          default: 'no-version'
+          default: '-no-version'
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
       with:
         artifacts: "ShotgunTurret-${{ github.event.inputs.version }}.zip"
         name: github.event.inputs.version
-        tag: "v {{ github.event.inputs.version }}"
+        tag: "v{{ github.event.inputs.version }}"
         commit: master
         
         
