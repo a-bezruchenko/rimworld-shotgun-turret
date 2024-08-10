@@ -16,11 +16,15 @@ jobs:
     steps:
     - name: checkout 
       uses: actions/checkout@v3
+
+    - name: remove unnecessary files
+      run: rm -rf Svgs todo.txt
       
     - name: package
       run: |
         zip -r ShotgunTurret-v${{ github.event.inputs.version }}.zip ./*
-        
+
+    - name: create tag and upload file to release
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "ShotgunTurret-v${{ github.event.inputs.version }}.zip"
