@@ -19,12 +19,12 @@ jobs:
       
     - name: package
       run: |
-        zip -r ShotgunTurret-${{ github.event.inputs.version }}.zip ./*
+        zip -r ShotgunTurret-v${{ github.event.inputs.version }}.zip ./*
         
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "ShotgunTurret-${{ github.event.inputs.version }}.zip"
-        name: github.event.inputs.version
+        name: "Release v${{ github.event.inputs.version }}"
         tag: "v${{ github.event.inputs.version }}"
         commit: "master"
         
