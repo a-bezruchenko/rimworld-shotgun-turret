@@ -17,8 +17,6 @@ jobs:
       
     - name: package
       run: |
-        mkdir ShotgunTurret
-        cp -r About/ Defs/ Textures/ Readme.md ShotgunTurret
         zip -r ShotgunTurret.zip ./*
         
     - name: Upload Package
