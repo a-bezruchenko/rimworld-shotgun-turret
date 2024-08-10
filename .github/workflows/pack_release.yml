@@ -17,12 +17,10 @@ jobs:
       
     - name: package
       run: |
-        zip -r ShotgunTurret.zip ./*
+        zip -r ShotgunTurret-${{ github.event.inputs.version }}.zip ./*
         
-    - name: Upload Package
-      id: upload-package
-      uses: actions/upload-release-asset@v1
+    - uses: ncipollo/release-action@v1
       with:
-        asset_path: ShotgunTurret.zip
-        asset_name: ShotgunTurret-${{ github.event.inputs.version }}.zip
-      
+        artifacts: "ShotgunTurret-${{ github.event.inputs.version }}.zip"
+        name: github.event.inputs.version
+        
