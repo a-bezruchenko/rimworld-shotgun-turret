@@ -1,0 +1,16 @@
+v3:
+* white dots aroung icon
+* barrel looks like it has black dots
+* forbid rotating them - done
+* make base different from mini turret?
+* make them more work intensive? - done
+* fix default ammo? - ah fuck it
+* slightly nerf? - done, it is more expensive now
+
+v2:
+ * add turrets research as prerequisite - done
+ * fix bullets origin - CE bug
+ * fix icon to new image - done
+ * make it more expensive - done
+ * 50% accuracy is too low, mb 75? - done, same as medium turret
+ * auto-turret -> turret - done

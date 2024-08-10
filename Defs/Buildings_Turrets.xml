@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TurretAutoBase">
+		<defName>Turret_Shotgun</defName>
+		<label>shotgun turret</label>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/MachineGunBase</texPath>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>ShotgunTurret_Icon</uiIconPath>
+	    <stealable>false</stealable>
+    	<rotatable>false</rotatable>
+		<statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>20</Mass>
+			<Bulk>20</Bulk>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<!-- <ShootingAccuracyTurret>0.75</ShootingAccuracyTurret> does it do anything in CE? -->
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+		</comps>
+		<description>Automatic turret equipped with a chain shotgun.</description>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<building>
+			<turretGunDef>Gun_ShotgunTurret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>GunTurrets</li>
+			<li>GasOperation</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+</Defs>

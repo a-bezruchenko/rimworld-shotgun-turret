@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<name>Shotgun Turret</name>
+	<author>W+M1 Noob</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>WM1N.ShotgunTurret</packageId>
+	<description>Version: 3\n\nAdds shotgun turret to help contain prisoners. Requires Combat Extended.</description>
+	<modDependencies>
+		<li>
+			<packageId>CETeam.CombatExtended</packageId>
+			<displayName>Combat Extended</displayName>
+			<steamWorkshopUrl></steamWorkshopUrl>
+			<downloadUrl></downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+</ModMetaData>

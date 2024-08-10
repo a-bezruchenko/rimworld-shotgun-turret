@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Shotgun</defName>
+		<label>shotgun turret</label>
+		<statBases>
+			<Mass>25</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+	</ThingDef>
+</Defs>
