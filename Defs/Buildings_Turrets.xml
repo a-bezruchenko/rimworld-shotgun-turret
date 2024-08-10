@@ -15,8 +15,8 @@
 	    <stealable>false</stealable>
     	<rotatable>false</rotatable>
 		<statBases>
-			<WorkToBuild>3500</WorkToBuild>
-			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>20</Mass>
 			<Bulk>20</Bulk>
 			<AimingAccuracy>0.5</AimingAccuracy>
@@ -26,14 +26,13 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>100</basePowerConsumption>
+				<basePowerConsumption>80</basePowerConsumption>
 			</li>
 		</comps>
-		<description>Automatic turret equipped with a chain shotgun.</description>
+		<description>Automatic turret equipped with a shotgun.</description>
 		<costList>
-			<Steel>150</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<Chemfuel>10</Chemfuel>
+			<Steel>100</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<building>
 			<turretGunDef>Gun_ShotgunTurret</turretGunDef>
@@ -45,7 +44,6 @@
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>GunTurrets</li>
-			<li>GasOperation</li>
 		</researchPrerequisites>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>

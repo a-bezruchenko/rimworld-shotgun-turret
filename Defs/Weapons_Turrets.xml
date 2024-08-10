@@ -7,25 +7,24 @@
 			<texPath>ShotgunTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<description>Chain shotgun attached to a turret mount.</description>
+		<description>Shotgun attached to a turret mount.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<SightsEfficiency>1</SightsEfficiency>
-			<ShotSpread>0.15</ShotSpread>
-			<SwayFactor>1.26</SwayFactor>
-			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.20</SwayFactor>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<Mass>5</Mass>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.54</recoilAmount>
+				<recoilAmount>1.5</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
-				<range>10</range>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<range>16</range>
+				<burstShotCount>1</burstShotCount>
 				<soundCast>Shot_Shotgun_NoRack</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -34,7 +33,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>30</magazineSize>
+				<magazineSize>15</magazineSize>
 				<reloadTime>10</reloadTime>
 				<ammoSet>AmmoSet_12Gauge</ammoSet>
 			</li>
