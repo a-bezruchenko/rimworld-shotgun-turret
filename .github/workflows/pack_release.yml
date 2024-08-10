@@ -10,8 +10,8 @@ jobs:
     - name: Remove unnecessary files
       run: rm -rf Svgs
     - name: Pack release
-      run: zip release.zip ./* -r
+      run: zip -r release.zip -i ./* 
     - uses: actions/upload-artifact@v2
       with:
-        name: release
+        name: release.zip
         path: release.zip
