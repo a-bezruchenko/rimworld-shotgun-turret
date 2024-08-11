@@ -20,7 +20,7 @@
 			<Mass>20</Mass>
 			<Bulk>20</Bulk>
 			<AimingAccuracy>0.5</AimingAccuracy>
-			<!-- <ShootingAccuracyTurret>0.75</ShootingAccuracyTurret> does it do anything in CE? -->
+			<ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<comps>
