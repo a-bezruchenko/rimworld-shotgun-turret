@@ -16,7 +16,7 @@
     	<rotatable>false</rotatable>
 		<statBases>
 			<WorkToBuild>6000</WorkToBuild>
-			<MaxHitPoints>150</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>20</Mass>
 			<Bulk>20</Bulk>
 			<AimingAccuracy>0.5</AimingAccuracy>
@@ -26,13 +26,13 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>80</basePowerConsumption>
+				<basePowerConsumption>100</basePowerConsumption>
 			</li>
 		</comps>
 		<description>Automatic turret equipped with a shotgun.</description>
 		<costList>
 			<Steel>100</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<building>
 			<turretGunDef>Gun_ShotgunTurret</turretGunDef>
