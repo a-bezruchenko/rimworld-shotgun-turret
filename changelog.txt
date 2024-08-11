@@ -1,0 +1,8 @@
+v3: 
+ * Initial release
+ * Turret is based on chain shotgun
+
+v4:
+ * Turret is now based on pump shotgun
+ * Other stats are the same as of mini turret
+ * Accuracy is slightly better to compensate low rate of fire
