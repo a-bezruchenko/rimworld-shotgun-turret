@@ -7,7 +7,7 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<packageId>WM1N.ShotgunTurret</packageId>
-	<description>Version: 4\n\nAdds shotgun turret to help contain prisoners. Requires Combat Extended.</description>
+	<description>Version: 5\n\nAdds shotgun turret to help contain prisoners. Requires Combat Extended.</description>
 	<modDependencies>
 		<li>
 			<packageId>CETeam.CombatExtended</packageId>
