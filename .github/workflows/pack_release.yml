@@ -17,12 +17,11 @@ jobs:
     - name: checkout 
       uses: actions/checkout@v3
 
-    - name: remove unnecessary files
-      run: rm -rf Svgs todo.txt
-      
     - name: package
       run: |
-        zip -r ShotgunTurret-v${{ github.event.inputs.version }}.zip ./*
+        mkdir ShotgunTurret
+        cp -r About Defs Textures README.md version.txt ShotgunTurret
+        zip -r ShotgunTurret-v${{ github.event.inputs.version }}.zip ./ShotgunTurret
 
     - uses: ncipollo/release-action@v1
       with:
